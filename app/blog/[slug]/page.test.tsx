@@ -14,3 +14,8 @@ it("QuangLoc text should be in the document",() =>{
   render(<Page params={{ slug: "Test" }} />);
   expect(screen.getByText("Quang Loc")).toBeInTheDocument()
 })
+
+it("City text should be in the document",() =>{
+  render(<Page params={{ slug: "Test" }} />);
+  expect(screen.getByText("TPHCM")).toBeInTheDocument()
+})
